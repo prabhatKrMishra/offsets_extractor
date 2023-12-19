@@ -17,11 +17,11 @@
     "m_sSanitizedPlayerName": 1872,
     "m_iTeamNum": 959,
     "m_iIDEntIndex": 5444,
-    "dwLocalPlayerController": 25235168,
-    "dwEntityList": 24910048,
-    "dwViewMatrix": 25297152,
+    "dwLocalPlayerController": 25235288,
+    "dwEntityList": 24910176,
+    "dwViewMatrix": 25297248,
     "dwBuildNumber": 5112788,
-    "dwPlantedC4": 25316248,
-    "dwLocalPlayerPawn": 23891672,
-    "dw_build_number": 13981
+    "dwPlantedC4": 25315992,
+    "dwLocalPlayerPawn": 23891784,
+    "dw_build_number": 13982
 }
