@@ -23,3 +23,5 @@ m_sSanitizedPlayerName
 m_iTeamNum
 m_iIDEntIndex
 dwLocalPlayerPawn
+dwViewAngles
+m_vecViewOffset

@@ -17,11 +17,13 @@
     "m_sSanitizedPlayerName": 1872,
     "m_iTeamNum": 959,
     "m_iIDEntIndex": 5444,
+    "m_vecViewOffset": 3144,
     "dwLocalPlayerController": 25235288,
     "dwEntityList": 24910176,
     "dwViewMatrix": 25297248,
     "dwBuildNumber": 5112788,
     "dwPlantedC4": 25315992,
     "dwLocalPlayerPawn": 23891784,
+    "dwViewAngles": 25693648,
     "dw_build_number": 13982
 }

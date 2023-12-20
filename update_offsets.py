@@ -23,7 +23,7 @@ for filename in os.listdir('../cs2-dumper/generated'):
                         elif variables[string] == 0 and value[string] > 0:
                             variables[string] = value[string]
 
-variables["dw_build_number"] = 13981
+variables["dw_build_number"] = 13982
 
 # Dump the variables with their values into offsets.json
 with open('offsets.json', 'w') as f:
