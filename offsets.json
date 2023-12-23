@@ -18,12 +18,12 @@
     "m_iTeamNum": 959,
     "m_iIDEntIndex": 5444,
     "m_vecViewOffset": 3144,
-    "dwLocalPlayerController": 25235288,
-    "dwEntityList": 24910176,
-    "dwViewMatrix": 25297248,
+    "dwLocalPlayerController": 25235272,
+    "dwEntityList": 24910160,
+    "dwViewMatrix": 25297232,
     "dwBuildNumber": 5112788,
-    "dwPlantedC4": 25315992,
-    "dwLocalPlayerPawn": 23891784,
-    "dwViewAngles": 25693648,
-    "dw_build_number": 13982
+    "dwPlantedC4": 25315976,
+    "dwLocalPlayerPawn": 23891768,
+    "dwViewAngles": 25693632,
+    "dw_build_number": 13983
 }
