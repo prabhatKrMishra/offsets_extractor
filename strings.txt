@@ -22,6 +22,10 @@ m_hPlayerPawn
 m_sSanitizedPlayerName
 m_iTeamNum
 m_iIDEntIndex
+m_iShotsFired
+m_aimPunchCache
+m_vecViewOffset
+m_aimPunchAngle
 dwLocalPlayerPawn
 dwViewAngles
-m_vecViewOffset
+v_angle
