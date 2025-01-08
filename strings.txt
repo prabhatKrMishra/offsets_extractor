@@ -4,6 +4,8 @@ dwEntityList
 dwViewMatrix
 dwBuildNumber
 dwPlantedC4
+dwSensitivity
+dwSensitivity_sensitivity
 m_flC4Blow
 m_flNextBeep
 m_flTimerLength
@@ -28,4 +30,6 @@ m_vecViewOffset
 m_aimPunchAngle
 dwLocalPlayerPawn
 dwViewAngles
+m_bDormant
+m_bSpottedByMask
 v_angle
