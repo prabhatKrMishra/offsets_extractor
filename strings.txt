@@ -31,5 +31,7 @@ m_aimPunchAngle
 dwLocalPlayerPawn
 dwViewAngles
 m_bDormant
+m_bSpotted
 m_bSpottedByMask
+m_entitySpottedState
 v_angle

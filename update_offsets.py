@@ -6,7 +6,7 @@ with open('strings.txt', 'r') as f:
     specific_strings = [line.strip() for line in f]
 
 # Initialize a dictionary to store the variables and their values
-variables = {string: 14059 if string == "dw_build_number" else 0 for string in specific_strings}  # Default dw_build_number to 13984
+variables = {string: 14060 if string == "dw_build_number" else 0 for string in specific_strings}  # Default dw_build_number to 13984
 
 # Define a recursive function to search for strings inside nested JSON objects
 def search_json(data, specific_strings, client_mode=False):
@@ -39,7 +39,7 @@ for filename in os.listdir('../cs2-dumper/output'):
             search_json(data, specific_strings, client_mode=True)
 
 # Ensure dw_build_number defaults to manula value
-variables["dw_build_number"] = variables.get("dw_build_number", 14059)
+variables["dw_build_number"] = variables.get("dw_build_number", 14060)
 
 # Print the variables dictionary before writing to offsets.json
 print("Final Variables:")
