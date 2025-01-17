@@ -6,7 +6,19 @@ with open('strings.txt', 'r') as f:
     specific_strings = [line.strip() for line in f]
 
 # Initialize a dictionary to store the variables and their values
-variables = {string: 14060 if string == "dw_build_number" else 0 for string in specific_strings}  # Default dw_build_number to 13984
+variables = {string: 0 for string in specific_strings}  # Default all values to 0
+
+# Load the existing offsets from offsets.json
+with open('offsets.json', 'r') as f:
+    offsets = json.load(f)
+
+# Get the current dw_build_number from offsets.json
+dw_build_number = offsets.get("dw_build_number", 14060)
+
+# Check if dwBuildNumber has changed and increment dw_build_number if needed
+dw_build_number_offset = offsets.get("dwBuildNumber", 0)
+if dw_build_number != dw_build_number_offset:
+    dw_build_number += 1
 
 # Define a recursive function to search for strings inside nested JSON objects
 def search_json(data, specific_strings, client_mode=False):
@@ -38,8 +50,11 @@ for filename in os.listdir('../cs2-dumper/output'):
             # Search the JSON data for specific strings
             search_json(data, specific_strings, client_mode=True)
 
-# Ensure dw_build_number defaults to manula value
-variables["dw_build_number"] = variables.get("dw_build_number", 14060)
+# Update variables with the incremented dw_build_number
+variables["dw_build_number"] = dw_build_number
+
+# Ensure dwBuildNumber matches dw_build_number
+variables["dwBuildNumber"] = variables.get("dwBuildNumber", dw_build_number)
 
 # Print the variables dictionary before writing to offsets.json
 print("Final Variables:")
