@@ -20,6 +20,7 @@ m_szName
 m_pClippingWeapon
 m_ArmorValue
 m_iHealth
+m_lifeState
 m_hPlayerPawn
 m_sSanitizedPlayerName
 m_iTeamNum

@@ -12,13 +12,11 @@ variables = {string: 0 for string in specific_strings}  # Default all values to 
 with open('offsets.json', 'r') as f:
     offsets = json.load(f)
 
-# Get the current dw_build_number from offsets.json
-dw_build_number = offsets.get("dw_build_number", 14060)
+# Get the current dw_build_number from offsets.json and store in a global variable
+dw_build_number = offsets.get("dw_build_number", 0)
 
-# Check if dwBuildNumber has changed and increment dw_build_number if needed
+# Get the current dwBuildNumber from offsets.json
 dw_build_number_offset = offsets.get("dwBuildNumber", 0)
-if dw_build_number != dw_build_number_offset:
-    dw_build_number += 1
 
 # Define a recursive function to search for strings inside nested JSON objects
 def search_json(data, specific_strings, client_mode=False):
@@ -34,6 +32,9 @@ def search_json(data, specific_strings, client_mode=False):
                 if isinstance(item, dict):
                     search_json(item, specific_strings, client_mode)
 
+# Flag to check if dwBuildNumber has changed
+dw_build_number_changed = False
+
 # Step 1: Search in non-server files
 for filename in os.listdir('../cs2-dumper/output'):
     if filename.endswith('.json') and 'server' not in filename:  # Skip files with 'server' in the name
@@ -42,13 +43,20 @@ for filename in os.listdir('../cs2-dumper/output'):
             # Search the JSON data for specific strings
             search_json(data, specific_strings, client_mode=False)
 
-# Step 2: Search in client files (only update variables that are still 0)
+# Step 2: Search in client files
 for filename in os.listdir('../cs2-dumper/output'):
     if filename.endswith('.json') and 'client' in filename:  # Only process files with 'client' in the name
         with open(os.path.join('../cs2-dumper/output', filename), 'r') as f:
             data = json.load(f)
             # Search the JSON data for specific strings
             search_json(data, specific_strings, client_mode=True)
+            # Check if dwBuildNumber has changed
+            if variables.get("dwBuildNumber", dw_build_number) != dw_build_number_offset:
+                dw_build_number_changed = True
+
+# Increment dw_build_number if dwBuildNumber has changed
+if dw_build_number_changed:
+    dw_build_number += 1
 
 # Update variables with the incremented dw_build_number
 variables["dw_build_number"] = dw_build_number
