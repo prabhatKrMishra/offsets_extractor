@@ -36,5 +36,8 @@
     "m_bSpotted": 8,
     "m_bSpottedByMask": 12,
     "m_entitySpottedState": 7000,
-    "v_angle": 4684
+    "v_angle": 4684,
+    "m_AttributeManager": 4672,
+    "m_Item": 80,
+    "m_iItemDefinitionIndex": 442
 }

@@ -36,3 +36,6 @@ m_bSpotted
 m_bSpottedByMask
 m_entitySpottedState
 v_angle
+m_AttributeManager
+m_Item
+m_iItemDefinitionIndex
