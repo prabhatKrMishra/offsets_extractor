@@ -1,11 +1,13 @@
 dw_build_number
+dwBuildNumber
 dwLocalPlayerController
+dwLocalPlayerPawn
 dwEntityList
 dwViewMatrix
-dwBuildNumber
 dwPlantedC4
 dwSensitivity
 dwSensitivity_sensitivity
+dwViewAngles
 m_flC4Blow
 m_flNextBeep
 m_flTimerLength
@@ -29,8 +31,6 @@ m_iShotsFired
 m_aimPunchCache
 m_vecViewOffset
 m_aimPunchAngle
-dwLocalPlayerPawn
-dwViewAngles
 m_bDormant
 m_bSpotted
 m_bSpottedByMask
@@ -39,3 +39,4 @@ v_angle
 m_AttributeManager
 m_Item
 m_iItemDefinitionIndex
+m_bIsScoped

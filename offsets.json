@@ -1,12 +1,14 @@
 {
     "dw_build_number": 14061,
+    "dwBuildNumber": 5483476,
     "dwLocalPlayerController": 27689168,
+    "dwLocalPlayerPawn": 25607672,
     "dwEntityList": 27358920,
     "dwViewMatrix": 27797312,
-    "dwBuildNumber": 5483476,
     "dwPlantedC4": 27814672,
     "dwSensitivity": 27782504,
     "dwSensitivity_sensitivity": 64,
+    "dwViewAngles": 27838512,
     "m_flC4Blow": 4032,
     "m_flNextBeep": 4028,
     "m_flTimerLength": 4040,
@@ -30,8 +32,6 @@
     "m_aimPunchCache": 5544,
     "m_vecViewOffset": 3248,
     "m_aimPunchAngle": 5508,
-    "dwLocalPlayerPawn": 25607672,
-    "dwViewAngles": 27838512,
     "m_bDormant": 239,
     "m_bSpotted": 8,
     "m_bSpottedByMask": 12,
@@ -39,5 +39,6 @@
     "v_angle": 4684,
     "m_AttributeManager": 4672,
     "m_Item": 80,
-    "m_iItemDefinitionIndex": 442
+    "m_iItemDefinitionIndex": 442,
+    "m_bIsScoped": 9192
 }
