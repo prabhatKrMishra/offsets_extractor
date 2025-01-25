@@ -40,5 +40,7 @@
     "m_AttributeManager": 4672,
     "m_Item": 80,
     "m_iItemDefinitionIndex": 442,
-    "m_bIsScoped": 9192
+    "m_bIsScoped": 9192,
+    "m_bInReload": 6136,
+    "m_iClip1": 5752
 }
